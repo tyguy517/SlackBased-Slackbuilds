@@ -1,0 +1,30 @@
+start_zt() {
+  if [ -x /usr/sbin/zerotier-one ]; then
+    echo "Starting zerotier daemon:  /usr/sbin/zerotier-one "
+    /usr/sbin/zerotier-one -d 2> /dev/null
+  fi
+}
+
+stop_zt() {
+  killall zerotier-one 2> /dev/null
+}
+
+restart_zt() {
+  stop_zt
+  sleep 1
+  start_zt
+}
+
+case "$1" in
+'start')
+ start_zt
+  ;;
+'stop')
+  stop_zt
+  ;;
+'restart')
+ restart_zt
+  ;;
+*)
+  echo "usage $0 start|stop|restart"
+esac

@@ -1,0 +1,11 @@
+PRGNAM="ZeroTierOne"
+VERSION="1.4.6"
+HOMEPAGE="https://www.zerotier.com/"
+DOWNLOAD="https://github.com/zerotier/ZeroTierOne/archive/1.4.6/ZeroTierOne-1.4.6.tar.gz"
+MD5SUM="0860b44a0a4ed59926fccf74a778bd96"
+DOWNLOAD_x86_64=""
+MD5SUM_x86_64=""
+REQUIRES=""
+MAINTAINER="kompowiec2"
+EMAIL="diasp@o2.pl"
+
